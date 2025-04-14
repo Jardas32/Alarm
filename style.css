@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-image: url(img/stars3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    padding: 0 10px;
+}
+
+.text {
+    display: none;
+    margin-top: 10px;
+    background-color: pink;
+    color: rgb(61, 0, 0);
+    padding: 15px 22px;
+    border-radius: 30px;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0 0 4px rgb(246, 246, 246);
+    text-align: center;
+}
+
+.tims {
+    position: relative;
+    margin-top: 150px;
+    background-color: aqua;
+    max-width: 400px;
+    width: 100%;
+    height: 350px;
+    border-radius: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    border: 15px solid pink;
+}
+
+.btStop {
+    margin-top: 20px;
+    background-color: rgb(237, 40, 40);
+    color: #ffffff;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all .3s;
+}
+
+.btStop:hover {
+    background-color: rgb(211, 0, 0);
+}
+
+.clock {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 6px 15px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.taimer {
+    max-width: 200px;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border-radius: 30px;
+    padding: 6px 15px;
+    font-size: 30px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+
+.up {
+    background-color: pink;
+    width: 20px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.up:nth-child(1) {
+    position: absolute;
+    top: -21px;
+    left: 90px;
+}
+
+.up:nth-child(2) {
+    position: absolute;
+    top: -21px;
+    right: 90px;
+}
+
+.tims::after {
+    content: "";
+    position: absolute;
+    left: 100px;
+    bottom: -28px;
+    width: 40px;
+    height: 20px;
+    background-color: pink;
+    border-bottom: 8px solid rgb(168, 2, 2);
+}
+
+.tims::before {
+    content: "";
+    position: absolute;
+    right: 100px;
+    bottom: -28px;
+    width: 40px;
+    height: 20px;
+    background-color: pink;
+    border-bottom: 8px solid rgb(168, 2, 2);
+}
+
+.tabal {
+    position: relative;
+    background-color: rgb(149, 149, 149);
+    max-width: 800px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabal::after {
+    content: "";
+    position: absolute;
+    max-width: 770px;
+    width: 95%;
+    height: 200px;
+    background-color: #8d8d8d;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+@media (max-width: 510px) {
+
+    .text {
+        text-align: center;
+    }
+
+    .taimer {
+        max-width: 170px;
+        width: 100%;
+        height: 45px;
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+        border-radius: 30px;
+        padding: 6px 15px;
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+        outline: none;
+    }
+
+    .up:nth-child(1) {
+        position: absolute;
+        top: -28px;
+        left: 90px;
+    }
+    
+    .up:nth-child(2) {
+        position: absolute;
+        top: -28px;
+        right: 90px;
+    }
+
+}
+
+@media (max-width: 361px) {
+
+    .text {
+        text-align: center;
+    }
+
+    .taimer {
+        max-width: 170px;
+        width: 100%;
+        height: 45px;
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+        border-radius: 30px;
+        padding: 6px 15px;
+        font-size: 22px;
+        font-weight: 600;
+        border: none;
+        outline: none;
+    }
+
+    .up:nth-child(1) {
+        position: absolute;
+        top: -28px;
+        left: 90px;
+    }
+    
+    .up:nth-child(2) {
+        position: absolute;
+        top: -28px;
+        right: 90px;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .text {
+        text-align: center;
+    }
+
+    .taimer {
+        max-width: 170px;
+        width: 100%;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+        border-radius: 30px;
+        padding: 6px 15px;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        outline: none;
+        text-align: center;
+    }
+
+    .up:nth-child(1) {
+        position: absolute;
+        top: -28px;
+        left: 90px;
+    }
+    
+    .up:nth-child(2) {
+        position: absolute;
+        top: -28px;
+        right: 90px;
+    }
+
+}
